@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Superhero Creator</h1>
+
+        <p>Enter details about your superhero, and see your hero appear below!</p>
+
+        <div class="input-section">
+            <label for="heroName">Superhero Name:</label>
+            <input type="text" id="heroName">
+
+            <label for="heroPower">Superpower:</label>
+            <input type="text" id="heroPower">
+
+            <label for="heroWeakness">Weakness:</label>
+            <input type="text" id="heroWeakness">
+
+            <button onclick="generateHero()">Create Superhero</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Your Superhero:</h2>
+            <p><strong>Name:</strong> <span id="displayName">???</span></p>
+            <p><strong>Superpower:</strong> <span id="displayPower">???</span></p>
+            <p><strong>Weakness:</strong> <span id="displayWeakness">???</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
